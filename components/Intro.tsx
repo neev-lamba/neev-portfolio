@@ -26,7 +26,7 @@ export default function Intro() {
         <h1 className="m-0 text-[44px] font-semibold leading-none tracking-[-1.5px] sm:text-[56px] sm:tracking-[-2px] md:text-[72px] md:tracking-[-3px] lg:text-[88px]">
           {intro.headline}
         </h1>
-        <p className="m-0 max-w-[560px] text-[19px] leading-[1.5] text-text2 sm:text-[24px]">
+        <p className="m-0 max-w-[560px] text-[19px] leading-[1.5] text-pretty text-text2 sm:text-[24px]">
           {intro.subline}
         </p>
         <div className="flex items-center gap-3">

@@ -11,7 +11,7 @@ Voice: calm, plain, confident. Short sentences. No buzzwords, no bragging number
 
 ## Intro
 - **Headline:** Hi, I'm Neev.
-- **Sub-line:** Software engineer at Citi. I build the systems behind payments and think hard about the people on the other side of them.
+- **Sub-line:** I'm a product-minded engineer at Citi in New York, working on payment systems. I like building things from zero and owning them from start to finish. Outside of work, it's staying active, F1, films, and finding somewhere good to eat.
 - **Icon links:** LinkedIn · GitHub · Email
 
 ## Experience (timing board)
