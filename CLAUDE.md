@@ -34,6 +34,7 @@ Components are in `components/` (one per section; `TimingBoard`, `ThemeToggle`, 
 - `CONTENT.md`: the current copy in readable form (mirror of `data/`).
 - `TECH_SPEC.md`: architecture, data sources, caching, security, deploy.
 - `BUILD_PLAN.md`: how the site was built (complete) and the update checklist.
+- `ROADMAP.md`: future improvements from the launch audit (projects, P1 wording, photo). Start here when Neev wants to add something.
 - `reference/mockup.html`: the original desktop design reference.
 
 ## Non-negotiables

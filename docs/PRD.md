@@ -161,4 +161,4 @@ Each card: a small colored icon on a tinted square, a mono label, a main value a
 | O-05 | Spotify connection | Dropped: replaced by the manual Last bite card (D-32) |
 | O-06 | A more candid photo | **Open:** Michigan graduation photo for now; swap anytime |
 | O-07 | Favicon and Open Graph image | Done: "n." monogram favicon (D-33); five red lights OG image |
-| O-08 | Final wording | Intro and About rewritten with Neev. **Open:** P1 row description ("without a minute of downtime") and the meta description |
+| O-08 | Final wording | Intro and About rewritten with Neev. Meta description updated to match. **Open:** P1 row description (see `ROADMAP.md`) |

@@ -62,7 +62,7 @@ Note: the old site used `nlamba@umich.edu`. Don't reuse it.
 
 ## Meta
 - Title: Neev Lamba · Software Engineer
-- Description: Neev Lamba is a software engineer at Citi in New York who builds payment systems and thinks like a product person. (Open: could be rewritten to match the new intro.)
+- Description: Neev Lamba is a product-minded engineer at Citi in New York, working on payment systems. He likes owning what he builds, from the first idea to the finished product.
 
 ## Photo
 `neev-portrait-4x5.jpg` (960×1200, ~150 KB), cropped from Neev's Michigan graduation photo. Alt: "Neev smiling in a Michigan CS graduation stole outside a stone campus building". Neev may swap in a more candid photo later; keep a 4:5 crop with his face in the upper third.

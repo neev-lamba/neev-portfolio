@@ -10,6 +10,7 @@ Product and design docs for [neevlamba.com](https://www.neevlamba.com). The site
 | [CONTENT.md](CONTENT.md) | All current copy in one readable place (the source of truth is `data/`) |
 | [TECH_SPEC.md](TECH_SPEC.md) | Architecture, data sources, caching, security, deployment |
 | [BUILD_PLAN.md](BUILD_PLAN.md) | How the site was built (complete) and the checklist for updates |
+| [ROADMAP.md](ROADMAP.md) | Future improvements from the launch audit, and how recruiters read the site |
 | [reference/mockup.html](reference/mockup.html) | The original desktop design reference. Open in a browser; the moon button toggles light mode |
 
 All explored design directions live on the claude.ai design canvas "Neev Portfolio Directions" (private to Neev).
