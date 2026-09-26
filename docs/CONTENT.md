@@ -32,7 +32,7 @@ Positions are simply newest first. P1 is always the current role.
 Source for all facts: `Lamba_Neev_Resume.pdf` (project files). If the resume changes, update `data/experience.json`.
 
 ## About
-> I've always been curious about how things work and how people use them. It started with video games with my dad and always wanting the newest gadget, and it's what led me to computer science at Michigan.
+> I've always been curious about how things work and how people use them. It started with playing video games with my dad from a young age, and his habit of always getting the newest tech gadgets rubbed off on me. That's what led me to computer science at Michigan.
 >
 > Some of my favorite summers were in product and design, figuring out what people actually needed before anything got built. Semesters in Prague and Portugal pushed that curiosity further, this time toward how other people live. At Citi I write the code, but I still think about who ends up using it.
 

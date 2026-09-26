@@ -22,7 +22,7 @@ export default async function About() {
       <div className="flex flex-col gap-[22px]">
         <h2 className="m-0 text-[32px] font-semibold tracking-[-0.8px]">{ui.aboutHeading}</h2>
         {about.map((p) => (
-          <p key={p} className="m-0 text-[17px] leading-[1.7] text-text2 sm:text-[19px]">
+          <p key={p} className="m-0 text-[17px] leading-[1.7] text-pretty text-text2 sm:text-[19px]">
             {p}
           </p>
         ))}
