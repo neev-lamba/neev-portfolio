@@ -1,0 +1,234 @@
+@import "tailwindcss";
+
+/* ---------- Theme tokens (DESIGN_SPEC §1). Dark is the default; .light on <html> swaps them. ---------- */
+:root {
+  --bg: #0d0d0f;
+  --panel: #121215;
+  --card: #16161a;
+  --hover: #1b1b20;
+  --line: #242428;
+  --dotoff: #2a2a2f;
+  --pill: #3a3a40;
+  --text: #edebe6;
+  --text2: #c9c6bf;
+  --muted: #a19e96;
+  --faint: #8c8980;
+  --purple: #b388ff;
+  --green: #3ddc84;
+  --yellow: #ffd23f;
+  --red2: #ff5a4f;
+  --linkhover: #ff4d42;
+  --race: #ff3b30;
+  color-scheme: dark;
+}
+
+:root.light {
+  --bg: #f6f5f2;
+  --panel: #ffffff;
+  --card: #ffffff;
+  --hover: #f0eeea;
+  --line: #e3e0da;
+  --dotoff: #dad7d0;
+  --pill: #cfcbc3;
+  --text: #16161a;
+  --text2: #3e3c38;
+  --muted: #5f5c56;
+  --faint: #6f6c66;
+  --purple: #7b2fbe;
+  --green: #1e8f52;
+  --yellow: #a77b0c;
+  --red2: #d0201a;
+  --linkhover: #d0201a;
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-card: var(--card);
+  --color-hover: var(--hover);
+  --color-line: var(--line);
+  --color-dotoff: var(--dotoff);
+  --color-pill: var(--pill);
+  --color-text: var(--text);
+  --color-text2: var(--text2);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-purple: var(--purple);
+  --color-green: var(--green);
+  --color-yellow: var(--yellow);
+  --color-red2: var(--red2);
+  --color-linkhover: var(--linkhover);
+  --color-race: var(--race);
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+/* Breakpoints from DESIGN_SPEC §8: <600 | 600–899 | 900–1099 | ≥1100 */
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 900px;
+  --breakpoint-lg: 1100px;
+}
+
+/* ---------- Base ---------- */
+html {
+  background: var(--bg);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  transition:
+    background 0.3s,
+    color 0.3s;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The mockup uses the browser's default line-height; Tailwind's preflight sets 1.5. */
+@layer base {
+  html,
+  body {
+    line-height: normal;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+/* Unlayered on purpose so it wins over color utilities: every link turns race-red on hover. */
+a:hover {
+  color: var(--linkhover);
+}
+
+:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+/* ---------- Lights out (DESIGN_SPEC §4.3): 9s loop, step-end ---------- */
+.light-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--dotoff);
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-end;
+}
+.light-dot:nth-child(1) { animation-name: l1; }
+.light-dot:nth-child(2) { animation-name: l2; }
+.light-dot:nth-child(3) { animation-name: l3; }
+.light-dot:nth-child(4) { animation-name: l4; }
+.light-dot:nth-child(5) { animation-name: l5; }
+
+@keyframes l1 {
+  0%, 44% { background: var(--race); box-shadow: 0 0 16px var(--race); }
+  45%, 100% { background: var(--dotoff); box-shadow: none; }
+}
+@keyframes l2 {
+  0%, 7% { background: var(--dotoff); }
+  8%, 44% { background: var(--race); box-shadow: 0 0 16px var(--race); }
+  45%, 100% { background: var(--dotoff); box-shadow: none; }
+}
+@keyframes l3 {
+  0%, 15% { background: var(--dotoff); }
+  16%, 44% { background: var(--race); box-shadow: 0 0 16px var(--race); }
+  45%, 100% { background: var(--dotoff); box-shadow: none; }
+}
+@keyframes l4 {
+  0%, 23% { background: var(--dotoff); }
+  24%, 44% { background: var(--race); box-shadow: 0 0 16px var(--race); }
+  45%, 100% { background: var(--dotoff); box-shadow: none; }
+}
+@keyframes l5 {
+  0%, 31% { background: var(--dotoff); }
+  32%, 44% { background: var(--race); box-shadow: 0 0 16px var(--race); }
+  45%, 100% { background: var(--dotoff); box-shadow: none; }
+}
+
+/* ---------- Timing board (DESIGN_SPEC §4.4–4.5) ---------- */
+.board-grid {
+  display: grid;
+  align-items: center;
+  gap: 14px;
+  grid-template-columns: 60px minmax(0, 1fr) auto; /* POS · ROLE(+TEAM) · TIME */
+}
+@media (min-width: 600px) {
+  .board-grid {
+    gap: 20px;
+    grid-template-columns: 76px minmax(0, 1fr) 90px 100px; /* STACK hidden */
+  }
+}
+@media (min-width: 900px) {
+  .board-grid { grid-template-columns: 76px minmax(0, 1fr) 100px 200px 110px; }
+}
+@media (min-width: 1100px) {
+  .board-grid { grid-template-columns: 76px minmax(0, 1fr) 100px 280px 110px; }
+}
+
+.trow {
+  transition: background 0.15s;
+}
+/* Background only under the pointer/focus (the default-open P1 row stays unshaded, as in the mockup). */
+.trow[data-hover="true"] {
+  background: var(--hover);
+}
+
+.pos .car {
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  margin-top: -7px;
+  opacity: 0;
+  transform: translateX(-28px);
+  transition:
+    transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 0.25s;
+}
+.pos .lbl {
+  transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.trow[data-active="true"] .car {
+  opacity: 1;
+  transform: translateX(0);
+}
+.trow[data-active="true"] .lbl {
+  transform: translateX(34px);
+}
+
+.desc {
+  max-height: 0;
+  opacity: 0;
+  margin-top: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.25s,
+    opacity 0.25s,
+    margin 0.25s;
+}
+.trow[data-active="true"] .desc {
+  max-height: 120px;
+  opacity: 1;
+  margin-top: 12px;
+}
+@media (min-width: 900px) {
+  .trow[data-active="true"] .desc { max-height: 60px; }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  body { transition: none; }
+  .car, .lbl, .desc { transition: none !important; }
+  .light-dot {
+    animation: none !important;
+    background: var(--race);
+    box-shadow: 0 0 16px var(--race);
+  }
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "citi-swe",
+    "role": "Software Engineer",
+    "company": "Citigroup",
+    "team": "CITI",
+    "start": "2025-07",
+    "end": null,
+    "yearsLabel": "2025 – NOW",
+    "stack": ["Java", "Spring Boot", "MongoDB"],
+    "description": "Moving Citi's payment services across the US and EU onto modern tooling, without a minute of downtime."
+  },
+  {
+    "id": "citi-intern",
+    "role": "Software Engineer Intern",
+    "company": "Citigroup",
+    "team": "CITI",
+    "start": "2024-05",
+    "end": "2024-08",
+    "yearsLabel": "2024",
+    "stack": ["Kubernetes", "Kafka", "Java"],
+    "description": "Moved legacy payment services onto a container platform so they're ready for the cloud."
+  },
+  {
+    "id": "born-pm",
+    "role": "Product Management Intern",
+    "company": "BORN Group",
+    "team": "BORN",
+    "start": "2023-05",
+    "end": "2023-08",
+    "yearsLabel": "2023",
+    "stack": ["React", "Figma", "Miro"],
+    "description": "Turned research on Nissan's internal tools into a full-stack app that cut manual work."
+  },
+  {
+    "id": "amber-analyst",
+    "role": "Data Analyst Intern",
+    "company": "Amber Group",
+    "team": "AMBER",
+    "start": "2022-05",
+    "end": "2022-08",
+    "yearsLabel": "2022",
+    "stack": ["Market research", "UX design"],
+    "description": "Studied competitors and redesigned a trading app's onboarding into four simple steps."
+  },
+  {
+    "id": "mecc-pm",
+    "role": "Product Manager",
+    "company": "Michigan Engineering Consulting Club",
+    "team": "MECC",
+    "start": "2022-12",
+    "end": "2023-12",
+    "yearsLabel": "2022 – 23",
+    "stack": ["React Native", "Flutter", "Dart"],
+    "description": "Led a student team building for real clients, from an AI tool for Kajabi to a Flutter app for seniors."
+  }
+]

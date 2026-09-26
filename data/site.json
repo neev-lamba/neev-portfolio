@@ -1,0 +1,98 @@
+{
+  "name": "Neev Lamba",
+  "navName": "neev lamba",
+  "title": "Neev Lamba · Software Engineer",
+  "metaDescription": "Neev Lamba is a software engineer at Citi in New York who builds payment systems and thinks like a product person.",
+  "intro": {
+    "headline": "Hi, I'm Neev.",
+    "subline": "Software engineer at Citi. I build the systems behind payments and think hard about the people on the other side of them."
+  },
+  "about": [
+    "I grew up playing video games with my dad and chasing whatever gadget was newest. Michigan turned that into computer science, and summers in product and design taught me to start with the person using the thing.",
+    "Semesters in Prague and Portugal gave me a taste for new places. Now I'm in New York, building payment systems at Citi."
+  ],
+  "links": {
+    "email": "lambaneev5@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/neev-lamba/",
+    "github": "https://github.com/neev-lamba",
+    "resume": "/Lamba_Neev_Resume.pdf"
+  },
+  "photo": {
+    "src": "/neev-portrait-4x5.jpg",
+    "alt": "Neev smiling in a Michigan CS graduation stole outside a stone campus building"
+  },
+  "offTheClock": {
+    "behindTheBar": {
+      "value": "Manhattan",
+      "sub": "Currently perfecting"
+    },
+    "lastBite": {
+      "value": "Sushi Yasuda",
+      "sub": "via Beli",
+      "url": "https://app.beliapp.com/lists/neev03"
+    },
+    "letterboxdUsername": "neev03",
+    "showLetterboxdRating": false,
+    "fallbacks": {
+      "nextRace": {
+        "value": "Next Grand Prix",
+        "sub": "Schedule loading"
+      },
+      "lastWatched": {
+        "value": "Nothing logged yet",
+        "sub": "via Letterboxd"
+      }
+    }
+  },
+  "ui": {
+    "nav": {
+      "work": "Work",
+      "about": "About",
+      "resume": "Resume",
+      "getInTouch": "Get in touch",
+      "menu": "Menu",
+      "toLight": "Switch to light mode",
+      "toDark": "Switch to dark mode"
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "Email Neev"
+    },
+    "experience": {
+      "heading": "Experience",
+      "liveTiming": "LIVE TIMING",
+      "columns": {
+        "pos": "POS",
+        "role": "ROLE",
+        "team": "TEAM",
+        "stack": "STACK",
+        "time": "TIME"
+      },
+      "hintHover": "Hover a row for details",
+      "hintTap": "Tap a row for details",
+      "fullResume": "Full resume ↗"
+    },
+    "garage": {
+      "heading": "In the garage",
+      "view": "View →"
+    },
+    "aboutHeading": "About",
+    "offTheClockLabel": "OFF THE CLOCK",
+    "cards": {
+      "nextRace": "NEXT RACE",
+      "lastBite": "LAST BITE",
+      "lastWatched": "LAST WATCHED",
+      "behindTheBar": "BEHIND THE BAR",
+      "racingNow": "Racing now",
+      "seasonOver": "Season's over",
+      "viaLetterboxd": "via Letterboxd"
+    },
+    "footer": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "fastestLap": "fastest lap",
+      "lapTime": "lap time"
+    }
+  }
+}
