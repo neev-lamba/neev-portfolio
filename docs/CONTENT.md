@@ -1,8 +1,8 @@
 # Content: Neev Lamba Portfolio (v2)
 
-Every word on the site, in one place. The machine-readable versions live in `data/` (`site.json`, `experience.json`, `projects.json`); keep them in sync with this file. Text in [brackets] is a placeholder Neev still needs to fill.
+Every word on the live site, in one place. The source of truth is `data/` (`site.json`, `experience.json`, `projects.json`); keep this file in sync when copy changes. Text in [brackets] is filled in live from an external source.
 
-Voice: calm, plain, confident. Short sentences. No buzzwords, no bragging numbers, no "passionate about".
+Voice: calm, plain, first person, confident. Short sentences. No buzzwords, no bragging numbers, no AI-sounding phrasing ("passionate about", "driven by", "immersing myself", "client-centric"). Neev reviews all wording.
 
 ---
 
@@ -36,14 +36,14 @@ Source for all facts: `Lamba_Neev_Resume.pdf` (project files). If the resume cha
 >
 > Some of my favorite summers were in product and design, figuring out what people actually needed before anything got built. Semesters in Prague and Portugal pushed that curiosity further, this time toward how other people live. At Citi I write the code, but I still think about who ends up using it.
 
-(Draft. Neev may rewrite in his own words; keep it to two short paragraphs.)
+(Rewritten with Neev at launch: curiosity → tech → product-minded. Keep it to two short paragraphs.)
 
 ## Off the clock
 | Label | Value | Sub-line | Filled by |
 |---|---|---|---|
-| NEXT RACE | [Grand Prix name] | [countdown, e.g. 06d 14h] | F1 calendar API (automatic) |
+| NEXT RACE | [Grand Prix name] | [countdown, e.g. 06d 14h] | Jolpica F1 API (automatic) |
 | LAST BITE | Sushi Yasuda | via Beli (links to app.beliapp.com/lists/neev03) | Neev, in `data/site.json` |
-| LAST WATCHED | [Film] | via Letterboxd | Letterboxd RSS (automatic) |
+| LAST WATCHED | [Film] | via Letterboxd | Letterboxd RSS, user `neev03` (automatic) |
 | BEHIND THE BAR | Manhattan | Currently perfecting | Neev, in `data/site.json` |
 
 ## Footer
@@ -54,18 +54,22 @@ Source for all facts: `Lamba_Neev_Resume.pdf` (project files). If the resume cha
 | Link | URL | Status |
 |---|---|---|
 | Email | mailto:lambaneev5@gmail.com | From resume |
-| LinkedIn | https://www.linkedin.com/in/neev-lamba/ | From old site; confirm still correct |
-| GitHub | https://github.com/neev-lamba | From old site; confirm still correct |
-| Resume | `/Lamba_Neev_Resume.pdf` | Copy the latest `Lamba_Neev_Resume.pdf` from project files into `public/` |
+| LinkedIn | https://www.linkedin.com/in/neev-lamba/ | Confirmed by Neev |
+| GitHub | https://github.com/neev-lamba | Confirmed by Neev |
+| Resume | `/Lamba_Neev_Resume.pdf` | In `public/`. Published as-is, incl. phone and building address (D-30); PDF author metadata set to Neev (D-34) |
 
 Note: the old site used `nlamba@umich.edu`. Don't reuse it.
 
 ## Meta
 - Title: Neev Lamba · Software Engineer
-- Description: Neev Lamba is a software engineer at Citi in New York who builds payment systems and thinks like a product person.
+- Description: Neev Lamba is a software engineer at Citi in New York who builds payment systems and thinks like a product person. (Open: could be rewritten to match the new intro.)
 
 ## Photo
 `neev-portrait-4x5.jpg` (960×1200, ~150 KB), cropped from Neev's Michigan graduation photo. Alt: "Neev smiling in a Michigan CS graduation stole outside a stone campus building". Neev may swap in a more candid photo later; keep a 4:5 crop with his face in the upper third.
+
+## Not on the site
+- A tools/skills list: tools stay on the resume and in the board's STACK column (D-36).
+- The "outside of work" sentence in the intro: the Off the clock cards cover it.
 
 ## Future: "In the garage" (projects)
 Empty for launch. Add entries to `data/projects.json` like:

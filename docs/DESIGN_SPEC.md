@@ -24,7 +24,7 @@ All colors are CSS custom properties on the root element. Dark is the default; `
 | `--muted` | `#A19E96` | `#5F5C56` | Secondary text, nav links |
 | `--faint` | `#8C8980` | `#6F6C66` | Mono labels, dates, hints |
 | `--purple` | `#B388FF` | `#7B2FBE` | P1 time, film icon, lap dot |
-| `--green` | `#3DDC84` | `#1E8F52` | Music icon |
+| `--green` | `#3DDC84` | `#1E8F52` | Fork-and-knife (Last bite) icon |
 | `--yellow` | `#FFD23F` | `#A77B0C` | Cocktail icon |
 | `--red2` | `#FF5A4F` | `#D0201A` | Flag icon |
 | `--linkhover` | `#FF4D42` | `#D0201A` | Link hover color |
@@ -116,7 +116,7 @@ Reference SVG:
   - Value 17px / 600; sub-line 13px `--faint`.
 - Icons (24-unit viewBox, 1.8 stroke, round caps), 14px:
   - Flag: `M5 21V4` + `M5 4h12l-2.5 4.5L17 13H5`
-  - Music: `M9 18V5l11-2v13`, circles (6,18,r3) and (17,16,r3)
+  - Fork and knife (Last bite): `M5 3v6a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V3` + `M7 3v18` + `M18 21V3c-2.5 1.5-3.5 4-3.5 7.5V13H18`
   - Film: rect 3,4 18×16 r2 + `M8 4v16M16 4v16M3 9h5M3 15h5M16 9h5M16 15h5`
   - Cocktail: `M4 4h16l-8 9z` + `M12 13v7` + `M8 20h8`
 
@@ -151,7 +151,7 @@ Reference SVG:
 - Persist choice in `localStorage("theme")`. Set the class in an inline script in `<head>` before first paint to prevent a flash.
 - `body` background must switch with the theme too.
 
-## 8. Responsive rules (not yet mocked; review on a real phone, open item O-01)
+## 8. Responsive rules (as built; approved on Neev's phone)
 
 | Breakpoint | Changes |
 |---|---|
@@ -161,3 +161,14 @@ Reference SVG:
 | < 600px | Side padding 20px; headline 44px; sub-line 19px. Board shows POS, ROLE (with TEAM on the line under the title), TIME. Descriptions indent 0. Cards: 2×2 above 420px, single column below. Footer stacks, lap time last |
 
 Touch: rows toggle on tap (one open at a time); hint reads "Tap a row for details".
+
+Board columns by width (`.board-grid` in `app/globals.css`): ≥1100 `76px 1fr 100px 280px 110px`; 900–1099 `76px 1fr 100px 200px 110px`; 600–899 `76px 1fr 90px 100px` (no STACK); <600 `60px 1fr auto` (TEAM under the title). Section gaps shrink to 112px below 900px.
+
+## 9. Built differences from the mockup
+Each is logged in `DECISIONS.md`.
+- 120px gap above the footer hairline (the mockup had none) (D-27).
+- Card values wrap to two lines instead of truncating (D-28).
+- Intro and About paragraphs use `text-wrap: pretty` so no single word sits alone on the last line.
+- Favicon is a lowercase "n" with a red full stop, ink matching the browser's tab bar (D-33); iOS icon is the same mark on `#0D0D0F`.
+- Open Graph image: five lit red lights, "Neev Lamba" and "Software Engineer" on `#0D0D0F`, 1200×630.
+- The NOW PLAYING card became LAST BITE: fork and knife in `--green`, links to Neev's Beli profile (D-32).

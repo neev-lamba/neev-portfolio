@@ -3,10 +3,10 @@
 | | |
 |---|---|
 | Owner | Neev Lamba |
-| Status | Design approved, ready to build |
+| Status | **Live** at https://www.neevlamba.com (launched 2026-09-26) |
 | Last updated | 2026-09-26 |
-| Visual reference | `reference/mockup.html` (open in a browser) and the design canvas "Neev Portfolio Directions" on claude.ai, tab "Current portfolio" |
-| Companion docs | `DESIGN_SPEC.md`, `CONTENT.md`, `TECH_SPEC.md`, `DECISIONS.md`, `BUILD_PLAN.md`, `CLAUDE.md` |
+| Visual reference | `docs/reference/mockup.html` (open in a browser) and the design canvas "Neev Portfolio Directions" on claude.ai, tab "Current portfolio" |
+| Companion docs | `DESIGN_SPEC.md`, `CONTENT.md`, `TECH_SPEC.md`, `DECISIONS.md`, `BUILD_PLAN.md`, and `CLAUDE.md` at the repo root |
 
 ---
 
@@ -20,7 +20,7 @@ The one-line positioning: **an engineer who thinks like a product person.**
 
 1. **Make a recruiter or hiring manager think more positively about Neev as a candidate** within the first screen.
 2. **Show experience without repeating the resume.** Short, scannable, no walls of text, no bullet dumps.
-3. **Feel unmistakably like Neev.** Personality comes from Formula 1, music, movies and cocktails, shown in small, tasteful ways.
+3. **Feel unmistakably like Neev.** Personality comes from Formula 1, films, restaurants and cocktails, shown in small, tasteful ways.
 4. **Stay simple.** Nothing on the page should distract from the content or feel "a bit much".
 5. **Be low maintenance.** Live elements update themselves; Neev should only need to edit content files.
 
@@ -37,7 +37,7 @@ The one-line positioning: **an engineer who thinks like a product person.**
 | Audience | What they need | How the site serves it |
 |---|---|---|
 | Software engineering recruiters and hiring managers (primary) | Who is this, where does he work, what has he done, how do I reach him | Intro + photo, F1 timing board, icon links in the first screen, resume link |
-| Product-leaning recruiters (primary) | Evidence of product thinking | Intro line about "the people on the other side", PM/analyst roles on the board, About text |
+| Product-leaning recruiters (primary) | Evidence of product thinking | "Product-minded engineer" intro, PM/analyst roles on the board, About text |
 | Peers, friends, people Neev meets | A sense of who he is | Off the clock cards, F1 theme, photo |
 
 ## 5. Personality and design principles
@@ -89,7 +89,7 @@ Styled like a Formula 1 live-timing screen.
 - **Default state:** P1 is open (car and description visible) so visitors discover the interaction. When the pointer is over any other row, P1 closes.
 - **Touch devices:** tapping a row toggles it open (accordion; one open at a time). Hint text changes from "Hover a row for details" to "Tap a row for details".
 - Below the board: hint text on the left, "Full resume ↗" link on the right.
-- Explicitly **not** included: sector bars, led/strong/contributed ratings, impact numbers (decision D-09).
+- Explicitly **not** included: sector bars, led/strong/contributed ratings, impact numbers (D-09), or a separate tools/skills section (D-36).
 
 ### 7.4 About
 - Two-column block: text on the left, **Off the clock** on the right.
@@ -130,35 +130,35 @@ Each card: a small colored icon on a tinted square, a mono label, a main value a
 - Both themes meet WCAG AA contrast. Light palette in `DESIGN_SPEC.md`.
 
 ### 7.10 Responsive
-- Designed at 1280px desktop; must work from 360px up with no horizontal scroll. Rules in `DESIGN_SPEC.md` §8. Mobile has not been mocked yet (open item O-01).
+- Designed at 1280px desktop; must work from 360px up with no horizontal scroll. Rules in `DESIGN_SPEC.md` §8. Reviewed by Neev on his phone at launch.
 
 ## 8. Non-functional requirements
 
 - **Performance:** Lighthouse Performance ≥ 95 on desktop and ≥ 90 on mobile. The portrait ships as optimized responsive images (the old site's 12–13 MB photos are not reused). Total JS kept minimal; live data fetched server-side and cached.
 - **Accessibility:** WCAG 2.2 AA. Keyboard reachable (board rows focusable; focus opens a row like hover). Icon-only buttons have `aria-label`s. Motion respects `prefers-reduced-motion`.
 - **SEO / sharing:** title "Neev Lamba · Software Engineer", meta description, Open Graph image, favicon.
-- **Privacy:** no tracking cookies. No secrets are needed; any future keys live only in server environment variables.
+- **Privacy and security:** no tracking cookies. No secrets are needed; any future keys live only in server environment variables. Security headers on every route (`TECH_SPEC.md` §5).
 - **Maintainability:** all copy and experience data live in `data/` files; no content hard-coded in components.
 
 ## 9. Success criteria (launch checklist)
 
-- [ ] Page matches `reference/mockup.html` on desktop in both themes.
-- [ ] All three live cards show real data in production, and a fallback when their source is unavailable.
-- [ ] Current role time updates automatically each month.
-- [ ] Lap time shows a real measured value.
-- [ ] Works on a phone (iOS Safari, Android Chrome) with tap-to-open rows.
-- [ ] Lighthouse and accessibility targets met.
-- [ ] Deployed on a public URL; resume PDF, email, LinkedIn and GitHub links all work.
+- [x] Page matches `reference/mockup.html` on desktop in both themes.
+- [x] Both live cards (next race, last watched) show real data in production, and a fallback when their source is unavailable.
+- [x] Current role time updates automatically each month.
+- [x] Lap time shows a real measured value.
+- [x] Works on a phone with tap-to-open rows.
+- [x] Lighthouse and accessibility targets met.
+- [x] Deployed on a public URL (neevlamba.com); resume PDF, email, LinkedIn and GitHub links all work.
 
 ## 10. Open items
 
-| ID | Item | Default if not decided |
+| ID | Item | Status |
 |---|---|---|
-| O-01 | Review a mobile mockup | Build to the responsive rules in `DESIGN_SPEC.md` §8, then review on a real phone |
-| O-02 | Custom domain | Launch on the Vercel URL; add a domain later |
-| O-03 | Neev's go-to cocktail | Placeholder text until Neev fills `data/site.json` |
-| O-04 | Letterboxd username | Card shows fallback until set |
-| O-05 | ~~Spotify connection~~ Replaced by the manual Last bite card (D-32) | — |
-| O-06 | A more candid photo | Keep the Michigan graduation photo; swap anytime |
-| O-07 | Favicon and Open Graph image design | Five red dots in a row on dark (favicon: single red dot) |
-| O-08 | Final wording of About and row descriptions | Use the drafts in `CONTENT.md` |
+| O-01 | Mobile review | Done: built to `DESIGN_SPEC.md` §8, approved by Neev on his phone |
+| O-02 | Custom domain | Done: neevlamba.com (D-35) |
+| O-03 | Neev's go-to cocktail | Done: Manhattan |
+| O-04 | Letterboxd username | Done: neev03 |
+| O-05 | Spotify connection | Dropped: replaced by the manual Last bite card (D-32) |
+| O-06 | A more candid photo | **Open:** Michigan graduation photo for now; swap anytime |
+| O-07 | Favicon and Open Graph image | Done: "n." monogram favicon (D-33); five red lights OG image |
+| O-08 | Final wording | Intro and About rewritten with Neev. **Open:** P1 row description ("without a minute of downtime") and the meta description |
