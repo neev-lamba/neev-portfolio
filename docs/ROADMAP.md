@@ -24,13 +24,15 @@ Findings from site audits and what to do next. Nothing here is urgent; most of i
 - Profile: "Software engineer at Citi · Michigan CS", New York, NY, website neevlamba.com.
 - Exactly 1 public repo: `neev-portfolio`. Class repos, old portfolios and 2023 practice projects are private; `test` is deleted. The old Pages site (`neev-lamba.github.io/neev-lamba-portfolio`) is offline.
 - Repo `neev-portfolio` website link now points to neevlamba.com.
-- Still open: nothing pinned yet; no profile README.
+- `neev-portfolio` is pinned.
+- Still open: no profile README.
 
 ## Done
 
 - [x] GitHub bio, location and website updated; class, old-portfolio and practice repos made private; `test` deleted (audit #1).
 - [x] Meta / Open Graph description rewritten to match the intro (audit #1).
 - [x] `neev-portfolio` repo website link pointed at neevlamba.com (audit #2).
+- [x] `neev-portfolio` pinned on the GitHub profile (audit #2).
 
 ## Next up
 
@@ -45,7 +47,7 @@ Findings from site audits and what to do next. Nothing here is urgent; most of i
 
 ## Quick GitHub touches (5 minutes)
 
-- [ ] **Pin `neev-portfolio`** now, and add new projects to the pins as they ship: profile → Customize your pins (manual only).
+- [ ] **Pin new projects as they ship** alongside `neev-portfolio`: profile → Customize your pins (manual only).
 - [ ] **Optional profile README:** a public repo named `neev-lamba` with two lines and a link to neevlamba.com.
 - [ ] **Optional:** match the GitHub display name ("Neev Singh Lamba") to the site ("Neev Lamba"), or leave it.
 
