@@ -72,7 +72,7 @@ Neev's friends would describe him as **calm and put-together, with good taste.**
 - Layout: photo on the **left** (portrait, 4:5, rounded corners), text on the **right**.
 - Above the headline: the **lights-out sequence** (five red dots, see §7.7).
 - Headline: **"Hi, I'm Neev."**
-- Sub-line: **"I'm a product-minded engineer at Citi in New York, working on payment systems. I like building things from zero and owning them from start to finish. Outside of work, it's staying active, F1, films, and finding somewhere good to eat."**
+- Sub-line: **"I'm a product-minded engineer at Citi in New York, working on payment systems, and I like building things from start to finish. Outside of work, I'm usually watching F1, catching a new film, trying a new restaurant, or learning a new cocktail technique."**
 - Below: three round **icon links**: LinkedIn, GitHub, Email. No "See my experience" or "Resume" buttons (they duplicated the nav and the section right below).
 
 ### 7.3 Experience: F1 timing board
